@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'RestQucikStart.urls'
+ROOT_URLCONF = 'snippets.urls'
 
 TEMPLATES = [
     {
