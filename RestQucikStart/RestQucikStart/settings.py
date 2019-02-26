@@ -79,10 +79,19 @@ WSGI_APPLICATION = 'RestQucikStart.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test_drf',
+        'USER': 'root',
+        'PASSWORD': 'Ryan1994',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'default-character-set': 'UTF8MB4',
+        'OPTIONS': {
+            'charset': 'utf8mb4',  # <--- Use this
+        }
     }
 }
+
 
 
 # Password validation
